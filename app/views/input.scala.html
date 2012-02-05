@@ -1,0 +1,15 @@
+@(inputForm: Form[(String, Long, Long, Long)])
+
+@import helper._
+
+
+
+  @form(action = routes.Application.format()) {
+    String: @inputText(inputForm("inputString"))
+    Arg1: @inputText(inputForm("arg1"))
+    Arg2: @inputText(inputForm("arg2"))
+    Arg3: @inputText(inputForm("arg3"))
+
+    <input type="submit" />
+  }
+

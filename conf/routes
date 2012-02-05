@@ -3,9 +3,10 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /                           controllers.Application.input()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-GET     /format                     controllers.Formatter.format()
+#GET     /input                     controllers.Application.input()
+POST    /format                     controllers.Application.format()
